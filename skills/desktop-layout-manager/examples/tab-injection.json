@@ -1,0 +1,35 @@
+[
+  {
+    "comp": "md-tab",
+    "attributes": {
+      "slot": "tab",
+      "class": "widget-pane-tab"
+    },
+    "children": [
+      {
+        "comp": "span",
+        "textContent": "Custom Agent Widget"
+      }
+    ]
+  },
+  {
+    "comp": "md-tab-panel",
+    "attributes": {
+      "slot": "panel",
+      "class": "widget-pane"
+    },
+    "children": [
+      {
+        "comp": "my-custom-widget",
+        "script": "https://cdn.example.com/widgets/my-custom-widget.js",
+        "wrapper": {
+          "title": "Custom Agent Widget",
+          "maximizeAreaName": "app-maximize-area"
+        },
+        "attributes": {
+          "darkmode": "$STORE.app.darkMode"
+        }
+      }
+    ]
+  }
+]
