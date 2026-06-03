@@ -24,7 +24,7 @@ def main():
     pascal_name = to_pascal_case(args.name)
     
     # Define source template directory
-    source_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "SampleCode", "wxcc-sdk-widget-fresh"))
+    source_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "SampleWidgetCode", "wxcc-sdk-widget-fresh"))
     
     if not os.path.exists(source_dir):
         print(f"Error: Template directory not found at: {source_dir}", file=sys.stderr)

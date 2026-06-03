@@ -4,10 +4,11 @@ This workspace is equipped with a specialized toolchain consisting of three dist
 
 ---
 
-## 🏗️ 1. Widget Coder (`wxcc-skill-coder`)
+## 1. Widget Coder (`wxcc-skill-coder`)
 **Purpose**: Scaffolds, authors, bundles, and tests custom Agent Desktop Web Components using the Webex Contact Center Desktop SDK.
 
 **How to Use**: 
+Copy SampleWidgetCode folder from the repo to the root of your project folder
 Instruct the AI to "Create a WxCC widget named [name]". It will use the `generate_widget.py` script to scaffold the boilerplate, then write standard Web Components (`mode: 'open'` Shadow DOM).
 
 **Critical Best Practices Learned**:
@@ -17,7 +18,7 @@ Instruct the AI to "Create a WxCC widget named [name]". It will use the `generat
 
 ---
 
-## 🌐 2. GitHub Pages Publisher (`github-pages-publisher`)
+## 2. GitHub Pages Publisher (`github-pages-publisher`)
 **Purpose**: Automatically creates a GitHub repository, pushes the compiled widget code, and enables GitHub Pages to host the widget script publicly.
 
 **How to Use**:
@@ -29,7 +30,7 @@ Instruct the AI to "Publish the widget to a GitHub repo named [repo-name]". It r
 
 ---
 
-## 🎛️ 3. Desktop Layout Manager (`desktop-layout-manager`)
+## 3. Desktop Layout Manager (`desktop-layout-manager`)
 **Purpose**: Fetches, modifies, and uploads WxCC Agent Desktop JSON layout configurations via the Cisco Webex Configuration API.
 
 **How to Use**:
@@ -45,7 +46,7 @@ Instruct the AI to "Inject the widget into the desktop layout [Layout ID]". It u
 
 ---
 
-## 🤖 Example: The "One-Shot" AI Prompt
+## Example: The "One-Shot" AI Prompt
 
 To trigger this entire pipeline smoothly, you can provide an AI agent with a comprehensive prompt like this:
 
