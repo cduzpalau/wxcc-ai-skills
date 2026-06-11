@@ -36,7 +36,7 @@ Installing these skills is as easy as moving a folder. Most AI agents follow the
 ### 1. The Easy Way (One Command)
 If you have the skills utility installed, run:
 ```bash
-npx skills add cpalau/wxcc-ai-skills
+npx skills add cduzpalau/wxcc-ai-skills
 ```
 
 ### 2. The Manual Way
