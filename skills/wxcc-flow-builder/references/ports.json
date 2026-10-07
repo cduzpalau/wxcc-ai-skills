@@ -1,0 +1,20 @@
+{
+  "_note": "Edge conditions verified against the live validator (wxcc-validate-flow), 2026-10-07. 'required' = must be connected by flowkit lint; 'allowed' = accepted conditions. Update when the platform changes.",
+  "activities": {
+    "start":                     {"required": ["out"], "allowed": ["out"]},
+    "event":                     {"required": ["out"], "allowed": ["out"]},
+    "set-variable":              {"required": ["out", "error"], "allowed": ["out", "error"]},
+    "condition-activity":        {"required": ["true", "false", "error"], "allowed": ["true", "false", "error"], "required_props": ["expression"]},
+    "play-message":              {"required": ["default", "error"], "allowed": ["default", "error"], "required_props": ["voiceLanguage"]},
+    "play-music":                {"required": ["default", "error"], "allowed": ["default", "error"]},
+    "business-hours":            {"required": ["workingHours", "holidays", "override", "default", "error"], "allowed": ["workingHours", "holidays", "override", "default", "error"], "required_props": ["businessHoursId"]},
+    "ivr-virtualassistantvoice": {"required": ["ENDED", "ESCALATE", "error"], "allowed": ["ENDED", "ESCALATE", "error"], "required_props": ["virtualAgentId"]},
+    "ivr-collectdigits":         {"required": ["", "timeout", "invalid", "error"], "allowed": ["", "timeout", "invalid", "error"], "required_props": ["voiceLanguage"]},
+    "ivr-menu":                  {"required": ["timeout", "invalid", "error"], "allowed": ["timeout", "invalid", "error"], "required_props": ["voiceLanguage"]},
+    "http-request-v2":           {"required": ["default", "error"], "allowed": ["default", "error", "success", "failure", "timeout", "out"]},
+    "queue-contact":             {"required": ["default"], "allowed": ["default"], "required_props": ["destination"]},
+    "queue-lookup":              {"required": ["", "insufficientdata", "failure"], "allowed": ["", "insufficientdata", "failure"], "required_props": ["destination"]},
+    "callback":                  {"required": ["default", "failure"], "allowed": ["default", "failure"]},
+    "disconnect-contact":        {"required": [], "allowed": []}
+  }
+}
